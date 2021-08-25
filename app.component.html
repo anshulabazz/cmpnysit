@@ -1,0 +1,408 @@
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html>
+<mat-toolbar class="navbarfirst">
+  <div class="infoicon">
+    <mat-icon>
+      email
+    </mat-icon>
+  </div>
+  <div class="info">
+    <span>info@rovy.in</span>
+  </div>
+  <div class="phoneicon">
+    <mat-icon class="phoneicon">
+      local_phone
+    </mat-icon>
+  </div>
+  <div class="phone">
+    <h1>+9189888888598</h1>
+  </div>
+
+  <div class="list" *ngIf="devicelg">
+    <ul>
+      <li>
+        <i class="fa fa-facebook"></i>
+      </li>
+      <li>
+        <i class="fa fa-twitter"></i>
+      </li>
+      <li>
+        <i class="fa fa-instagram"></i>
+      </li>
+    </ul>
+  </div>
+
+
+
+</mat-toolbar>
+<mat-toolbar class="navbar-expand-lg">
+  <img class="logo" src="assets/images/rovylogo.jpg" />
+
+  <button *ngIf="!devicelg" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon class="iconmenu">menu</mat-icon>
+  </button>
+  <div class="matmenu">
+  <mat-menu   #menu="matMenu">
+    <button  mat-menu-item>Home</button>
+ 
+    <button mat-menu-item>Services</button>
+    <button mat-menu-item>Testimonials</button>
+    <button mat-menu-item>Recent Clients</button>
+    <button mat-menu-item>Certificate</button>
+    <button mat-menu-item>Contact</button>
+
+  </mat-menu>
+    </div>
+  <ul *ngIf="devicelg" class="list1">
+
+    <div class="item">
+      <li>Home</li>
+      <li>Services</li>
+      <li>Testimonials</li>
+      <li>Recent Clients</li>
+
+      <li>Certificates</li>
+      <li>Contact</li>
+    </div>
+
+
+  </ul>
+</mat-toolbar>
+
+  <section class="section">
+    <owl-carousel-o [options]="customOptions4">
+
+      <ng-template carouselSlide>
+
+        <img src="assets/images/welcome.gif">
+        <div class="heading">
+          <h1>Welcome To Rovy Solutions</h1>
+          <p>We provie Niche Service</p>
+          <button mat-raised-button>Know More</button>
+        </div>
+      </ng-template>
+
+      <ng-template carouselSlide>
+        <img src="assets/images/welcome.gif">
+        <h2>Quality You Deserve</h2>
+        <p class="para1" style="margin-left:23em;">Quality we Serve</p>
+        <button mat-raised-button>Contact us</button>
+      </ng-template>
+
+      <ng-template carouselSlide><img src="assets/images/welcome.gif"></ng-template>
+
+
+    </owl-carousel-o>
+
+
+
+
+
+
+  </section>
+  <section class="services">
+    
+      <h2>Software Development</h2>
+    
+    <p>
+      Software development is the practice of organising
+      the design and construction n of software,
+      the beating heart of much technology fundamental
+      to our personal and professional life.
+    </p>
+    <ul>
+      <li><mat-icon>checked</mat-icon>JavaScript ,Java</li>
+      <li><mat-icon>checked</mat-icon>C , C++</li>
+      <li><mat-icon>checked</mat-icon>Git.</li>
+      <li><mat-icon>checked</mat-icon>Python</li>
+      <li><mat-icon>checked</mat-icon>Blockchain</li>
+      <li><mat-icon>checked</mat-icon>SQL</li>
+    </ul>
+
+    <img  class="second" src="assets/images/pictures2.jpg" />
+    <div *ngIf="devicelg" class="triangle"></div>
+  </section>
+  <section class="service2">
+
+
+    <img src="assets/images/images1.jpg" />
+
+    <div class="serviceselement">
+      <h3>Website Devlopment</h3>
+      <p>
+        Software development is the practice of organising the
+        design and construction of software, the beating heart of
+        much technology fundamental to our personal and professional life.
+      </p>
+      <ul>
+        <li><mat-icon>checked</mat-icon>React( Redux,Saga,Thunk).</li>
+        <li><mat-icon>checked</mat-icon>Angular.</li>
+        <li><mat-icon>checked</mat-icon>Javascript.</li>
+        <li><mat-icon>checked</mat-icon>Server( PHP , ASP.Net , Ruby on Rails , Python).</li>
+
+      </ul>
+      <div *ngIf="devicelg" class="triangle"></div>
+    </div>
+
+
+  </section>
+  <section class="section3" style="background-color:white">
+
+    <ul>
+      <li>
+        <img src="assets/images/ico12.jpg" />
+        <h1>ARTIFICIAL INTELLIGENCE</h1>
+        <p>
+          Working Language from Artificial Intelligence
+          ( Machine Learning , Python)
+        </p>
+      </li>
+      <li>
+        <img src="assets/images/ico10.jpg" />
+        <h1>DELIVERY MANAGEMENT</h1>
+        <p>
+          Working Language from Delivery Management
+          ( Scrum , SAFE 5.0 , Kanban , DevOps)
+        </p>
+      </li>
+      <li>
+        <img src="assets/images/logo7.png" />
+        <h1>MOBILE DEVELOPMENT</h1>
+        <p>
+          Working Language from Mobile Development
+          ( Android: Xamarine , Javascript , Flutter , React Native , Ionic , C# , Java , IOS , Swift)
+        </p>
+      </li>
+      <li>
+        <img src="assets/images/ico14.jpg" />
+        <h1>CONTENT WRITING</h1>
+        <p>
+          Working Language from Content Writing
+          ( Android: Xamarine , Javascript , Flutter , Reac Native , Ionic , C# , Java , IOS , Swift)
+        </p>
+      </li>
+      <li>
+        <img src="assets/images/ico15.jpg" />
+        <h1>SEO OPTIMIZATION</h1>
+        <p>
+          Working Language from SEO Optimization
+          ( On-Site Audit , Rank Tracking , Backlink Checker , SEO Checker , Keyworld Check)
+        </p>
+      </li>
+      <li>
+        <img src="assets/images/ico7.jpg" />
+        <h1>QUALITY ASSURANCE</h1>
+        <p>
+          Working Language from Quality Assurance
+          ( Selenium , Appium , Tosca , Robotic Process Automation : RPA , Coded UI , Test Silk , J-meter)
+        </p>
+      </li>
+    </ul>
+    <img class="bigimg" src="assets/images/ico13.jpg" />
+  </section>
+  <section class="section4">
+    <div class="testi" style="height: 34px"> TESTIMONIAL</div>
+    <div class="imge">
+      <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide><img src="assets/images/23.jpg"></ng-template>
+        <ng-template carouselSlide><img src="assets/images/23.jpg"></ng-template>
+        <ng-template carouselSlide><img src="assets/images/23.jpg"></ng-template>
+      </owl-carousel-o>
+      <div class="second">
+        <owl-carousel-o [options]="customOptions">
+          <ng-template carouselSlide><img src="assets/images/23.jpg"></ng-template>
+          <ng-template carouselSlide><img src="assets/images/23.jpg"></ng-template>
+          <ng-template carouselSlide><img src="assets/images/23.jpg"></ng-template>
+        </owl-carousel-o>
+      </div>
+    </div>
+  </section>
+  <section class="section5">
+    <div *ngIf="devicelg" class="triangle1"></div>
+
+    <div *ngIf="devicelg" class="first">
+      <h4>About us</h4>
+
+      <p>
+        We formed the organization with intent
+        to deliver the best services
+        with respective technologies
+      </p>
+    </div>
+    <div *ngIf="devicelg" class="triangle2"></div>
+    <div *ngIf="devicelg" class="second">
+      <h5>Vision</h5>
+
+      <p style="color:white">
+        Delivering Robust services with static
+        Velocity for clients to have the minimum
+        viable product in shortest turnaround We have
+        one mission in mind that is to
+        deliver Quality product to our customers.
+      </p>
+
+    </div>
+
+    <img src="assets/images/7.jpg" />
+  </section>
+
+  <section class="section7">
+    <img src="assets/images/8.jpg" />
+    <div class="second">
+      <h4>Mission</h4>
+      <p>
+        Quality You Deserve is the Quality
+        We Serve We cater our team as per your
+        need and keep high transparency with the team
+        work culture. We work in Agile methodology andhave Certified
+        Professionals leading the team Our Values:
+      </p>
+    </div>
+    <div class="third" style="background-color:#f5f5f5; width: 379px;">
+      <h1>Quality you deserve</h1>
+      <h1> Quality we serve...</h1>
+    </div>
+  </section>
+  <section class="section8">
+    <h1>Recent Clients</h1>
+    <owl-carousel-o [options]="customOptions1">
+      <ng-template carouselSlide><img src="assets/images/comp1.png"></ng-template>
+      <ng-template carouselSlide><img src="assets/images/comp2.png"></ng-template>
+      <ng-template carouselSlide><img src="assets/images/comp3.jpg"></ng-template>
+      <ng-template carouselSlide><img src="assets/images/comp4.jpg"></ng-template>
+      <ng-template carouselSlide><img src="assets/images/comp5.png"></ng-template>
+      <ng-template carouselSlide><img src="assets/images/comp6.jpg"></ng-template>
+      <ng-template carouselSlide><img src="assets/images/comp7.jpg"></ng-template>
+      <ng-template carouselSlide><img src="assets/images/comp8.png"></ng-template>
+    </owl-carousel-o>
+  </section>
+  <section class="section9">
+    <h1>Certificates</h1>
+    <div class="certimages">
+      <img src="assets/images/20.png">
+      <img src="assets/images/20.png">
+      <img src="assets/images/20.png">
+      <img src="assets/images/20.png">
+      <img src="assets/images/20.png">
+      <img src="assets/images/20.png">
+
+
+    </div>
+  </section>
+  <section class="section10">
+    <p>Get in Touch</p>
+    <h1>Contact Us</h1>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <div class="name">
+            <input type="email" class="form-control" id="Customer" #customer placeholder="First Name">
+
+          </div>
+        </div>
+        <div class="form-group col-md-6">
+          <div class="name2">
+            <input type="email" class="form-control" id="Customer" placeholder="Last Name">
+
+          </div>
+        </div>
+        <div class="form-group col-md-6">
+          <div class="name3">
+            <input type="email" class="form-control" id="Customer" placeholder="Email">
+
+          </div>
+        </div>
+        <div class="form-group col-md-6">
+          <div class="name4">
+            <input type="email" class="area" id="Customer" placeholder=" Write your Message.....">
+
+          </div>
+        </div>
+        <div class="form-group col-md-6">
+          <div class="name5">
+            <button type="button" class="btn btn-warning">Send Message</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="info1">
+      <ul>
+        <li>Location</li>
+        <li>Panchkula,Harayana</li>
+        <li>Phone</li>
+        <li>+ 917973352383</li>
+        <li>Email</li>
+        <li>info@rovy.in</li>
+
+      </ul>
+
+    </div>
+
+  </section>
+  <section class="section11">
+
+    <owl-carousel-o [options]="customOptions2">
+      <ng-template carouselSlide><img src="assets/images/25.jpg"></ng-template>
+      <ng-template carouselSlide><img src="assets/images/tech1.png"></ng-template>
+      <ng-template carouselSlide><img src="assets/images/tech2.png"></ng-template>
+      <ng-template carouselSlide><img src="assets/images/tech3.jpg"></ng-template>
+      <ng-template carouselSlide><img src="assets/images/tech5.png"></ng-template>
+      <ng-template carouselSlide><img src="assets/images/tech6.png"></ng-template>
+      <ng-template carouselSlide><img src="assets/images/tech7.png"></ng-template>
+    </owl-carousel-o>
+  </section>
+  <section class="section12">
+    <h1>About Us</h1>
+    <p>
+      We formed the organization with intent
+      to deliver the best services
+      with respective technologies and
+      came up with the combination
+      of two unique vision that every person deserves and
+      with intent of same we formed Rovy Solutions.
+    </p>
+    <div class="second">
+      <h2>Company</h2>
+      <ul>
+        <li>Home</li>
+        <li>Services</li>
+        <li>Testimonials</li>
+        <li>Recent Clients</li>
+
+        <li>Certificates</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="third">
+
+      <h3>SUSCRIBE TO NEWSLETTER</h3>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <button class="btn btn-primary">Suscribe</button>
+      </form>
+    </div>
+
+    <div class="icon">
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+    </div>
+    <mat-divider></mat-divider>
+    <h5>
+      Copyright ©2021 Rovy
+      Solutions - All rights reserved
+    </h5>
+    <div class="circle"></div>
+    <div class="circle2"></div>
+  </section>
+
+
+
+  </html>
+
